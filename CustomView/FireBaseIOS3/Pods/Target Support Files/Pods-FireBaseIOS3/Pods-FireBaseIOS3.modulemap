@@ -1,0 +1,6 @@
+framework module Pods_FireBaseIOS3 {
+  umbrella header "Pods-FireBaseIOS3-umbrella.h"
+
+  export *
+  module * { export * }
+}

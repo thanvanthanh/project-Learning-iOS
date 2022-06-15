@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="ChatTableViewCell" customModule="DieuHuongManHinh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAP-1c-4Do">
+                        <rect key="frame" x="0.0" y="0.0" width="385" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p7B-wD-CY3">
+                                <rect key="frame" x="23" y="15" width="70" height="70"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanh Văn Thân" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILg-be-yIF">
+                                <rect key="frame" x="113" y="25" width="308" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em chào anh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayo-sP-OaE">
+                                <rect key="frame" x="113" y="55" width="83" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ayo-sP-OaE" firstAttribute="leading" secondItem="ILg-be-yIF" secondAttribute="leading" id="4wC-3P-1Uq"/>
+                            <constraint firstItem="Ayo-sP-OaE" firstAttribute="top" secondItem="ILg-be-yIF" secondAttribute="bottom" constant="5" id="Bbk-Cn-TUC"/>
+                            <constraint firstItem="p7B-wD-CY3" firstAttribute="centerY" secondItem="eAP-1c-4Do" secondAttribute="centerY" id="ReV-gY-cPw"/>
+                            <constraint firstItem="ILg-be-yIF" firstAttribute="width" secondItem="eAP-1c-4Do" secondAttribute="width" multiplier="0.8" id="UjF-c5-NIf"/>
+                            <constraint firstItem="p7B-wD-CY3" firstAttribute="height" secondItem="eAP-1c-4Do" secondAttribute="height" multiplier="0.7" id="dD4-Jy-aT7"/>
+                            <constraint firstItem="ILg-be-yIF" firstAttribute="leading" secondItem="p7B-wD-CY3" secondAttribute="trailing" constant="20" id="dxC-5C-taV"/>
+                            <constraint firstItem="ILg-be-yIF" firstAttribute="height" secondItem="eAP-1c-4Do" secondAttribute="height" multiplier="1/4" id="ekG-bD-J2b"/>
+                            <constraint firstItem="p7B-wD-CY3" firstAttribute="centerX" secondItem="eAP-1c-4Do" secondAttribute="centerX" multiplier="3/10" id="hkt-OT-pot"/>
+                            <constraint firstItem="p7B-wD-CY3" firstAttribute="width" secondItem="eAP-1c-4Do" secondAttribute="height" multiplier="0.7" id="kf5-FG-qt6"/>
+                            <constraint firstItem="ILg-be-yIF" firstAttribute="top" secondItem="p7B-wD-CY3" secondAttribute="top" constant="10" id="tBe-To-Qv5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eAP-1c-4Do" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fhf-Ls-7kd"/>
+                    <constraint firstAttribute="bottom" secondItem="eAP-1c-4Do" secondAttribute="bottom" id="Poa-04-spJ"/>
+                    <constraint firstItem="eAP-1c-4Do" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bNp-L8-e3V"/>
+                    <constraint firstAttribute="trailing" secondItem="eAP-1c-4Do" secondAttribute="trailing" id="fhc-b1-5jJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="176.08695652173915" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

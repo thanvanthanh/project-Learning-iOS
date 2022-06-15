@@ -1,0 +1,6 @@
+framework module Pods_HoWing {
+  umbrella header "Pods-HoWing-umbrella.h"
+
+  export *
+  module * { export * }
+}
