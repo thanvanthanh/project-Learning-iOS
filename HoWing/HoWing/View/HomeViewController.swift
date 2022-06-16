@@ -72,7 +72,7 @@ class HomeViewController: UIViewController, CardSliderDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
+        tabBarController?.tabBar.backgroundColor = .white
         dataE = updateCardSlider()
         dataT = updatedata()
         topColectionView.delegate = self

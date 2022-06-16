@@ -241,28 +241,29 @@ class LoginViewController: UIViewController {
     
     
     @objc func onLogin(){
-        guard let email = emailTextFild.text, let password = passwordTextField.text else {
-            return
-        }
-        
-        FireBaseAuthManager.shared.login(email, password) { (status) in
-            if status {
-                print("Đăng nhập thành công")
-                let homeVC = self.setupTabar()
-                homeVC.modalPresentationStyle = .fullScreen
-                self.present(homeVC, animated: true, completion: nil)
-            }else{
-                let arlet = UIAlertController(title: "Incorrect account or password", message: "", preferredStyle: .alert)
-                let cancel = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                
-                arlet.addAction(cancel)
-                self.present(arlet, animated: true, completion: nil)
-                
-                print("Đăng nhập không thành công")
-                
-            }
-        }
+        let homeVC = self.setupTabar()
+        homeVC.modalPresentationStyle = .fullScreen
+        self.present(homeVC, animated: true, completion: nil)
+//        guard let email = emailTextFild.text, let password = passwordTextField.text else {
+//            return
+//        }
+//
+//        FireBaseAuthManager.shared.login(email, password) { (status) in
+//            if status {
+//                print("Đăng nhập thành công")
+//
+//            }else{
+//                let arlet = UIAlertController(title: "Incorrect account or password", message: "", preferredStyle: .alert)
+//                let cancel = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//
+//
+//                arlet.addAction(cancel)
+//                self.present(arlet, animated: true, completion: nil)
+//
+//                print("Đăng nhập không thành công")
+//
+//            }
+//        }
         
        
 

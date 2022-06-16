@@ -43,7 +43,7 @@ class ProfileViewController: UIViewController {
     let namelbl : UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.text = "Linh Doãn Hoài"
+        lbl.text = "Than Van Thanh"
         lbl.textColor = .black
         lbl.textAlignment = .center
         lbl.font = UIFont(name: "Times New Roman", size: 25)
